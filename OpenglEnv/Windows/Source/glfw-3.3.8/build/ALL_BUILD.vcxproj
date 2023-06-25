@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C055C0A1-1CFB-3013-AFE2-9113D52F563A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ChromeDownload\glfw-3.3.8\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/ChromeDownload/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/ChromeDownload/glfw-3.3.8 -BD:/ChromeDownload/glfw-3.3.8/build --check-stamp-file D:/ChromeDownload/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;D:\ChromeDownload\glfw-3.3.8\cmake_uninstall.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3.pc.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3Config.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/ChromeDownload/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/ChromeDownload/glfw-3.3.8 -BD:/ChromeDownload/glfw-3.3.8/build --check-stamp-file D:/ChromeDownload/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;D:\ChromeDownload\glfw-3.3.8\cmake_uninstall.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3.pc.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3Config.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/ChromeDownload/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/ChromeDownload/glfw-3.3.8 -BD:/ChromeDownload/glfw-3.3.8/build --check-stamp-file D:/ChromeDownload/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;D:\ChromeDownload\glfw-3.3.8\cmake_uninstall.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3.pc.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3Config.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/ChromeDownload/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SD:/ChromeDownload/glfw-3.3.8 -BD:/ChromeDownload/glfw-3.3.8/build --check-stamp-file D:/ChromeDownload/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.27\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakePackageConfigHelpers.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\FindDoxygen.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.27\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.27\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.27\Modules\WriteBasicConfigVersionFile.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeRCCompiler.cmake;D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\3.27.0-rc3\CMakeSystem.cmake;D:\ChromeDownload\glfw-3.3.8\cmake_uninstall.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3.pc.in;D:\ChromeDownload\glfw-3.3.8\src\glfw3Config.cmake.in;D:\ChromeDownload\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\ZERO_CHECK.vcxproj">
+      <Project>{D824521F-C443-3B47-B860-0D7FD903B6C2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\boing.vcxproj">
+      <Project>{1E049AE9-20BF-39CB-817B-64007B608AFF}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\clipboard.vcxproj">
+      <Project>{F711F94A-4197-3B46-B57B-373A3018EF67}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\cursor.vcxproj">
+      <Project>{88FA45EA-D063-3D2C-A98C-ECBCA3B71085}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\empty.vcxproj">
+      <Project>{0453F0A6-D975-398A-80EA-61665A93979A}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\events.vcxproj">
+      <Project>{1F8BAAC3-AD9D-3311-899F-6C4B4E444D2D}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\gamma.vcxproj">
+      <Project>{3D3BC1FD-464B-3B70-94B0-5B1E3FA62B72}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\gears.vcxproj">
+      <Project>{FCD45F9D-C6FE-3044-84CE-5D5C0922D062}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\src\glfw.vcxproj">
+      <Project>{36606353-1AAB-3BC2-A813-00AB413F33DF}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\glfwinfo.vcxproj">
+      <Project>{997BFEDB-9E49-34C3-808F-7D1068900D8A}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\heightmap.vcxproj">
+      <Project>{194CC834-4D8C-3957-909E-962E4DF8BAB3}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\icon.vcxproj">
+      <Project>{4B9EF9BF-80D9-3FA0-893F-334EE5D1AA07}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\iconify.vcxproj">
+      <Project>{14CF4D57-1305-3A52-A58D-FEFA269D7921}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\inputlag.vcxproj">
+      <Project>{2443E2DC-1F62-3D8D-9D46-6BC06B078069}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\joysticks.vcxproj">
+      <Project>{2DE61684-900E-3892-8462-FF5C51AF8A8C}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\monitors.vcxproj">
+      <Project>{736300E2-5A2D-34F3-9A9D-1828D4D445C8}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\msaa.vcxproj">
+      <Project>{C35EFE4D-D28E-3942-A29C-0A59548E6D28}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\offscreen.vcxproj">
+      <Project>{D7D61413-E34C-30AB-86E2-6B15955DFDF7}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\opacity.vcxproj">
+      <Project>{6A913CBB-C838-3DC7-A02B-D8F901BBAA15}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\particles.vcxproj">
+      <Project>{39701E8E-2927-3319-B9FC-1AA418538EFC}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\reopen.vcxproj">
+      <Project>{377DE5E4-AE8C-30D9-8C42-14A778E23F27}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\sharing.vcxproj">
+      <Project>{9E2C1290-BCE4-3EC0-8EE6-4552563DAC68}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\simple.vcxproj">
+      <Project>{C4866225-CF27-367E-8CE5-1D5911EDDB27}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\splitview.vcxproj">
+      <Project>{F8BE0E08-2619-3640-876F-31FBCBA82B74}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\tearing.vcxproj">
+      <Project>{C18C1C79-66A2-370F-A200-83D29A499084}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\threads.vcxproj">
+      <Project>{1CAC28BF-4573-3362-A111-81D53B2D6308}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\timeout.vcxproj">
+      <Project>{AA6DDF21-F35E-35F6-922B-8A430158A571}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\title.vcxproj">
+      <Project>{CA25436F-B202-3F56-B296-684EBCCE02AD}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\triangle-vulkan.vcxproj">
+      <Project>{15CD6969-1FA4-3724-B5C1-05C0BED22D6B}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\examples\wave.vcxproj">
+      <Project>{3A1638CF-A9CF-3138-B655-BBC12429B2C0}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\ChromeDownload\glfw-3.3.8\build\tests\windows.vcxproj">
+      <Project>{E76619E1-99A0-3569-BE23-A515A61BC1F7}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

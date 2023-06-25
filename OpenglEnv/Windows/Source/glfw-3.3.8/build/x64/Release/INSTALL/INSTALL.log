@@ -1,0 +1,11 @@
+﻿  1>
+  -- Install configuration: "Release"
+  -- Installing: D:/OpenGL/GLFW/lib/glfw3.lib
+  -- Installing: D:/OpenGL/GLFW/include/GLFW
+  -- Installing: D:/OpenGL/GLFW/include/GLFW/glfw3.h
+  -- Installing: D:/OpenGL/GLFW/include/GLFW/glfw3native.h
+  -- Installing: D:/OpenGL/GLFW/lib/cmake/glfw3/glfw3Config.cmake
+  -- Installing: D:/OpenGL/GLFW/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+  -- Installing: D:/OpenGL/GLFW/lib/cmake/glfw3/glfw3Targets.cmake
+  -- Installing: D:/OpenGL/GLFW/lib/cmake/glfw3/glfw3Targets-release.cmake
+  -- Installing: D:/OpenGL/GLFW/lib/pkgconfig/glfw3.pc

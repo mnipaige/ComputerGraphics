@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ChromeDownload\glfw-3.3.8\build\CMakeFiles\46630c10ca7849b5b59bffbf3d0895ec\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\ChromeDownload\glfw-3.3.8\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\ChromeDownload\glfw-3.3.8\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\ChromeDownload\glfw-3.3.8\CMake\GenerateMappings.cmake" />
+    <None Include="D:\ChromeDownload\glfw-3.3.8\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{65379C53-2E71-3C5E-BB60-187FDFE2EB34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2BBC9E5F-45DE-3FE2-B9F9-9BCCE44063F2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^D:\CHROMEDOWNLOAD\GLFW-3.3.8\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SD:/ChromeDownload/glfw-3.3.8 -BD:/ChromeDownload/glfw-3.3.8/build --check-stamp-file D:/ChromeDownload/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

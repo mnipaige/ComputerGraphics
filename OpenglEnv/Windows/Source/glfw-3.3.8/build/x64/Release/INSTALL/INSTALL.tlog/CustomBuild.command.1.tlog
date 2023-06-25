@@ -1,0 +1,10 @@
+^D:\CHROMEDOWNLOAD\GLFW-3.3.8\BUILD\CMAKEFILES\C99CBC25FC9D245E9F8242777C2B8A2F\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
